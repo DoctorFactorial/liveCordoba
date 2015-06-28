@@ -1,4 +1,7 @@
 <% @articles.each do |a| %>
+	
+	<%= image_tag a.image.url(:original), class: "img-responsive" %>
 	<h2><%= a.title %></h2>
 	<p><%= a.content %></p>
+
 <% end %>
