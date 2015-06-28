@@ -33,7 +33,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
-gem 'simple_form'
+gem 'simple_form'	
+gem 'paperclip'
 
 
 group :development, :test do
