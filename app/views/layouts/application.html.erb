@@ -3,11 +3,14 @@
 <head>
   <title>LiveCordoba</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <!-- google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway|Merriweather' rel='stylesheet' type='text/css'>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= render "layouts/logo" %>
+<%= render "layouts/header" %>
 <%= yield %>
 
 </body>

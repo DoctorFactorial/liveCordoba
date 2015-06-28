@@ -5,3 +5,69 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+
+ .headers {
+   font-family: 'Raleway', sans-serif;
+ }
+
+ /* override navbar defaults */
+ .navbar-default {
+     background-color: white;
+     border-color: white;
+     position: relative;
+     top: 30px;
+ }
+ 
+ .container-fluid{
+     margin-bottom:40px;
+ }
+ 
+ .navbar-default .navbar-nav > li > a {
+     color: #000;
+ }
+ 
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+     color: #555;
+     text-decoration: underline;
+ }
+ .navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+     color: #000;
+     background-color: #FFF;
+     text-decoration: underline;
+ }
+ 
+.active > a, 
+.active > a:hover, 
+.active > a:focus {
+    color: #000;
+    background-color: #FFF;
+    text-decoration: underline;
+}
+
+ .active_header,
+ .active_header :hover,
+ .active_header :focus {
+     color: #000;
+     background-color: #FFF;
+     text-decoration: underline;
+ }
+ 
+ .navbar-default .navbar-nav > .open > a, 
+ .navbar-default .navbar-nav > .open > a:hover, 
+ .navbar-default .navbar-nav > .open > a:focus {
+     color: #000;
+     background-color: #FFF;
+ }
+
+.navbar-default .navbar-brand {
+  color: #111;
+}
+
+.logo {
+	position: relative;
+    left: 45px;
+    top: 30px;
+}
