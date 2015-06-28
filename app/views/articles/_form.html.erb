@@ -1,29 +1,17 @@
-<%= form_for(@article) do |f| %>
-  <% if @article.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
-
-      <ul>
-      <% @article.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<%= simple_form_for(@article, html: {class: "form-signin"}) do |f| %>
+  <%= f.error_notification %>
+ 
+ 
+    <%= f.input :title, required: true, label: false, placeholder: "Name", input_html: {class: "form-control"} %>
+    <%= f.input :category, required: true, label: false, placeholder: "Author's name", input_html: {class: "form-control"} %>
+    <%= f.input :content, required: true, label: false, placeholder: "Description", input_html: {class: "form-control", rows: 5} %>
+    <br>
+    
+    <%= f.input :image %>
+    
+    <div class="checkbox text-center">
+    <p>Current Issue</p>
+    <%= f.input :current_issue, required: false, label: false %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
-  </div>
-  <div class="field">
-    <%= f.label :current_issue %><br>
-    <%= f.check_box :current_issue %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.button :submit, class: "btn btn-primary btn-block" %>
 <% end %>
